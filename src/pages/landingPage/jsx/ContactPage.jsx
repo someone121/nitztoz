@@ -42,9 +42,9 @@ const ContactPage = () => {
           <div className="contact-social">
             <h2>עקבו אחרינו</h2>
             <div className="social-links">
-              <a href="#" className="social-link">Instagram</a>
-              <a href="#" className="social-link">TikTok</a>
-              <a href="#" className="social-link">YouTube</a>
+              <a href="https://www.instagram.com/" className="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.tiktok.com/" className="social-link" target="_blank" rel="noopener noreferrer">TikTok</a>
+              <a href="https://www.youtube.com/" className="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
             </div>
           </div>
         </div>

@@ -40,7 +40,7 @@ const LeadForm = ({ title = "השאירי פרטים ונחזור אלייך" })
     
     if (!formData.phone.trim()) {
       newErrors.phone = 'מספר טלפון הוא שדה חובה';
-    } else if (!/^[\d\s\-\+\(\)]+$/.test(formData.phone)) {
+    } else if (!/^[\d\s+()-]+$/.test(formData.phone)) {
       newErrors.phone = 'מספר טלפון לא תקין';
     }
     
