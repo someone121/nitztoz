@@ -1,0 +1,47 @@
+/* Form Page specific styles */
+.form-page {
+  min-height: 100vh;
+  background-color: var(--primary-white);
+}
+
+.form-page-hero {
+  background: linear-gradient(135deg, var(--primary-gold) 0%, #FFA500 100%);
+  text-align: center;
+  padding: var(--spacing-xxl) 0;
+}
+
+.form-page-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.form-page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-black);
+  margin-bottom: var(--spacing-md);
+}
+
+.form-page-subtitle {
+  font-size: 1.2rem;
+  color: var(--primary-black);
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .form-page-hero {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .form-page-title {
+    font-size: 2rem;
+  }
+  
+  .form-page-subtitle {
+    font-size: 1.1rem;
+  }
+}
+

@@ -1,0 +1,62 @@
+/* Section component styles */
+.section {
+  padding: var(--spacing-xxl) 0;
+}
+
+.section-white {
+  background-color: var(--primary-white);
+}
+
+.section-light {
+  background-color: var(--bg-light);
+}
+
+.section-gold {
+  background-color: var(--primary-gold);
+}
+
+.section-dark {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark h5,
+.section-dark h6 {
+  color: var(--primary-white);
+}
+
+.section-dark p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Padding variants */
+.section-small {
+  padding: var(--spacing-xl) 0;
+}
+
+.section-large {
+  padding: 4rem 0;
+}
+
+.section-extra-large {
+  padding: 5rem 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .section-large {
+    padding: 3rem 0;
+  }
+  
+  .section-extra-large {
+    padding: 4rem 0;
+  }
+}

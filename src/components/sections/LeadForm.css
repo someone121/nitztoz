@@ -1,0 +1,45 @@
+/* Lead Form component styles */
+.lead-form-section {
+  background-color: var(--bg-light);
+}
+
+.lead-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lead-form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-xl);
+}
+
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.lead-form-submit {
+  margin-top: var(--spacing-md);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .lead-form-container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .lead-form-title {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .lead-form {
+    gap: var(--spacing-sm);
+  }
+}

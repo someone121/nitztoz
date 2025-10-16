@@ -1,0 +1,39 @@
+/* Landing Page specific styles */
+.landing-page {
+  min-height: 100vh;
+  background-color: var(--primary-white);
+}
+
+/* Additional styling for the landing page sections */
+.landing-page .section {
+  padding: var(--spacing-xxl) 0;
+}
+
+.landing-page .section:nth-child(even) {
+  background-color: var(--bg-light);
+}
+
+/* Smooth scroll behavior for anchor links */
+.landing-page a[href^="#"] {
+  scroll-margin-top: 80px;
+}
+
+/* Enhanced focus states for better accessibility */
+.landing-page *:focus {
+  outline: 2px solid var(--primary-gold);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .landing-page .header,
+  .landing-page .navigation,
+  .landing-page .footer {
+    display: none;
+  }
+  
+  .landing-page .section {
+    page-break-inside: avoid;
+  }
+}
+
