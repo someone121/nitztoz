@@ -1,4 +1,6 @@
 import React from 'react';
+import LeadForm from '../../../components/sections/LeadForm';
+import recommendationVideo from '../../../assets/videos/recommendation01.mp4';
 import Navigation from '../../../components/layout/Navigation';
 import Footer from '../../../components/layout/Footer';
 import Section from '../../../components/common/Section';
@@ -21,52 +23,32 @@ const VideoPage = () => {
       <Section className="videos-section">
         <div className="videos-container">
           <div className="video-item">
-            <h3 className="video-title">סרטון 1: 5 הטעויות הקריטיות</h3>
-            <div className="video-placeholder">
-              <div className="video-placeholder-content">
-                <div className="play-button">
-                  <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 5V19L19 12L8 5Z" fill="white"/>
-                  </svg>
-                </div>
-                <p className="placeholder-text">הסרטון יופיע כאן</p>
-              </div>
-            </div>
+            <h3 className="video-title">ההדרכה שלך</h3>
+            <video className="header-video" controls playsInline preload="metadata" poster="/video-poster.jpg" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 6px 18px var(--shadow-medium)' }}>
+              <source src={recommendationVideo} type="video/mp4" />
+              הדפדפן שלך לא תומך בנגן הווידאו.
+            </video>
             <p className="video-description">
               גלי את 5 הטעויות הקריטיות שגורמות למעצבות פנים מוכשרות להיעלם בים של מתחרות
             </p>
           </div>
 
-          <div className="video-item">
-            <h3 className="video-title">סרטון 2: הנוסחה הסודית</h3>
-            <div className="video-placeholder">
-              <div className="video-placeholder-content">
-                <div className="play-button">
-                  <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 5V19L19 12L8 5Z" fill="white"/>
-                  </svg>
-                </div>
-                <p className="placeholder-text">הסרטון יופיע כאן</p>
-              </div>
-            </div>
-            <p className="video-description">
-              למדי את הנוסחה המדויקת שעובדת על אוטומט ומביאה לקוחות איכותיים
-            </p>
-          </div>
         </div>
       </Section>
 
       <Section className="cta-section" background="light">
         <div className="cta-content">
-          <h3 className="cta-title">מוכנה לצעד הבא?</h3>
-          <p className="cta-description">
-            אם הסרטונים האלה עזרו לך להבין את הפוטנציאל שלך, בואי נדבר על איך לקחת את העסק שלך לשלב הבא
-          </p>
-          <a href="/contact" className="cta-button">
-            בואי נדבר על הפרויקט הבא שלך
-          </a>
+          <h3 className="cta-title">לפני שאת יוצאת, יש לנו בשבילך הצעה של פעם בחיים.</h3>
+          <div className="cta-description">
+            <p>אנחנו מציעים לך פגישת פיצוח אחד על אחד - שעה שלמה שבה תביני בדיוק מה את צריכה לעשות ב־90 הימים הקרובים, כדי להביא את העסק שלך להכנסות של 5 עד 6 ספרות בחודש.</p>
+            <p>הפגישה הזו עולה בדרך כלל 1500 ש"ח אבל ל־5 המעצבות הראשונות שישאירו פרטים כאן למטה - היא ניתנת במתנה, לגמרי בחינם.</p>
+            <p>אם את אחת שיודעת לזהות הזדמנויות - זו יכולה להיות ה־זכייה שלך בלוטו. אם לא - את תמיד יכולה לצאת מהדף, לקחת את כל הידע והערך שקיבלת כאן ולנסות את מזלך לבד בשיווק עצמאי.</p>
+          </div>
+          <a href="#lead-form" className="btn btn-royal" onClick={(e) => { e.preventDefault(); document.getElementById('lead-form')?.scrollIntoView({ behavior: 'smooth' }); }}>אני בפנים - שריינו לי פגישת פיצוח חינם (בשווי 1,500 ש"ח)</a>
         </div>
       </Section>
+
+      <LeadForm title="השאירי פרטים לשריון פגישת פיצוח בחינם" successRedirect="/thanks" />
 
       <Footer />
     </div>

@@ -5,7 +5,7 @@ import Button from '../common/Button';
 import Section from '../common/Section';
 import './LeadForm.css';
 
-const LeadForm = ({ title = "השאירי פרטים ונחזור אלייך" }) => {
+const LeadForm = ({ title = "השאירי פרטים ונחזור אלייך", successRedirect = '/videos' }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fullName: '',
@@ -73,8 +73,8 @@ const LeadForm = ({ title = "השאירי פרטים ונחזור אלייך" })
       setFormData({ fullName: '', phone: '', email: '' });
       setErrors({});
       
-      // Redirect to videos page after successful submission
-      navigate('/videos');
+      // Redirect after successful submission
+      navigate(successRedirect);
       
     } catch (error) {
       console.error('Error submitting form:', error);

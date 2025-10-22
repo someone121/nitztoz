@@ -27,7 +27,8 @@ const Header = ({ title, subtitle, videoSrc, ctaText, onCtaClick }) => {
         
         {videoSrc && (
           <div className="header-video-container">
-            <video 
+            <video
+              autoPlay
               className="header-video" 
               controls 
               playsInline 

@@ -55,6 +55,21 @@
   box-shadow: 0 4px 12px var(--shadow-medium);
 }
 
+/* Royal blue variant */
+.btn-royal {
+  background-color: var(--primary-royal-blue);
+  color: var(--primary-white);
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.btn-royal:hover:not(.btn-disabled) {
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
 /* Sizes */
 .btn-small {
   padding: 0.5rem 1rem;

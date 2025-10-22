@@ -9,6 +9,7 @@ const ContentSection = ({
   ctaText, 
   ctaHref, 
   onCtaClick,
+  ctaVariant = 'secondary',
   className = '' 
 }) => {
   return (
@@ -44,7 +45,7 @@ const ContentSection = ({
         <div className="content-section-cta">
           {ctaHref ? (
             <Button 
-              variant="secondary" 
+              variant={ctaVariant} 
               href={ctaHref}
               className="content-section-button"
             >
@@ -52,7 +53,7 @@ const ContentSection = ({
             </Button>
           ) : (
             <Button 
-              variant="secondary" 
+              variant={ctaVariant} 
               onClick={onCtaClick}
               className="content-section-button"
             >
