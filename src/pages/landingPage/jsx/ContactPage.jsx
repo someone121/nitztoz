@@ -24,18 +24,14 @@ const ContactPage = () => {
             <div className="contact-methods">
               <div className="contact-method">
                 <h3>אימייל</h3>
-                <p>info@nitzotz.com</p>
+                <p>yarinandomer10@gmail.com</p>
               </div>
               
               <div className="contact-method">
                 <h3>טלפון</h3>
-                <p>050-123-4567</p>
+                <p>052-7093809</p>
               </div>
               
-              <div className="contact-method">
-                <h3>שעות פעילות</h3>
-                <p>ראשון - חמישי: 9:00 - 18:00</p>
-              </div>
             </div>
           </div>
           

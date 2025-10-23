@@ -24,6 +24,98 @@
   outline-offset: 2px;
 }
 
+/* Secret section styles */
+.secret-section {
+  text-align: center;
+  padding: var(--spacing-xxl) 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  margin: var(--spacing-lg) 0;
+}
+
+.secret-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-gold);
+  margin-bottom: var(--spacing-lg);
+  font-style: italic;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.secret-section .subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-xl);
+  font-weight: 500;
+}
+
+.main-title {
+  margin-bottom: var(--spacing-xl);
+}
+
+.title-line {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-black);
+  margin: 0 0 var(--spacing-sm) 0;
+  line-height: 1.2;
+}
+
+.subtitle-text {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.proof-placeholder {
+  font-size: 1rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border: 2px dashed var(--border-light);
+}
+
+/* Mobile responsive for secret section */
+@media (max-width: 768px) {
+  .secret-text {
+    font-size: 1.25rem;
+  }
+  
+  .title-line {
+    font-size: 2rem;
+  }
+  
+  .secret-section .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .subtitle-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .secret-text {
+    font-size: 1.1rem;
+  }
+  
+  .title-line {
+    font-size: 1.75rem;
+  }
+  
+  .secret-section .subtitle {
+    font-size: 1rem;
+  }
+  
+  .subtitle-text {
+    font-size: 0.95rem;
+  }
+}
+
 /* Print styles */
 @media print {
   .landing-page .header,

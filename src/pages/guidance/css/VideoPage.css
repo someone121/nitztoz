@@ -50,6 +50,13 @@
   text-align: center;
 }
 
+.video-intro {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
 .video-title {
   font-size: 1.5rem;
   font-weight: 600;

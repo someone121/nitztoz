@@ -41,6 +41,18 @@
   padding: var(--spacing-xs) 0;
 }
 
+.content-section-extra {
+  margin: var(--spacing-lg) 0;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.content-section-extra div {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.7;
+}
+
 .content-section-cta {
   margin-top: var(--spacing-lg);
 }

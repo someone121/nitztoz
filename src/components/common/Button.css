@@ -13,6 +13,7 @@
   transition: var(--transition-fast);
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .btn:focus {
@@ -30,8 +31,8 @@
 .btn-primary {
   background-color: var(--primary-black);
   color: var(--primary-white);
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.9rem;
 }
 
 .btn-primary:hover:not(.btn-disabled) {
@@ -43,8 +44,8 @@
 .btn-secondary {
   background-color: var(--primary-gold);
   color: var(--primary-black);
-  padding: 0.85rem 1.6rem;
-  font-size: 1rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.9rem;
   border-radius: 6px;
   font-weight: 700;
 }
@@ -59,8 +60,8 @@
 .btn-royal {
   background-color: var(--primary-royal-blue);
   color: var(--primary-white);
-  padding: 0.9rem 1.8rem;
-  font-size: 1rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.9rem;
   border-radius: 10px;
 }
 
@@ -73,12 +74,12 @@
 /* Sizes */
 .btn-small {
   padding: 0.5rem 1rem;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .btn-large {
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
 }
 
 .btn-full {
@@ -112,6 +113,13 @@
   100% { transform: rotate(360deg); }
 }
 
+/* Text sizing for button content */
+.btn-text-sm {
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .btn {
@@ -120,7 +128,16 @@
   }
   
   .btn-large {
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn-royal {
+    font-size: 0.85rem;
+    padding: 0.65rem 1.2rem;
+  }
+  
+  .btn-text-sm {
+    font-size: 0.75rem;
   }
 }

@@ -23,8 +23,11 @@ const VideoPage = () => {
       <Section className="videos-section">
         <div className="videos-container">
           <div className="video-item">
+            <p className="video-intro">
+              <>{'זו הדרכה שתמלא את היומן שלך - '}<strong>{'תצפי עכשיו!'}</strong></>
+            </p>
             <h3 className="video-title">ההדרכה שלך</h3>
-            <video className="header-video" controls playsInline preload="metadata" poster="/video-poster.jpg" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 6px 18px var(--shadow-medium)' }}>
+            <video className="header-video" controls muted autoPlay playsInline preload="metadata" poster="/video-poster.jpg" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 6px 18px var(--shadow-medium)' }}>
               <source src={recommendationVideo} type="video/mp4" />
               הדפדפן שלך לא תומך בנגן הווידאו.
             </video>
@@ -40,11 +43,19 @@ const VideoPage = () => {
         <div className="cta-content">
           <h3 className="cta-title">לפני שאת יוצאת, יש לנו בשבילך הצעה של פעם בחיים.</h3>
           <div className="cta-description">
-            <p>אנחנו מציעים לך פגישת פיצוח אחד על אחד - שעה שלמה שבה תביני בדיוק מה את צריכה לעשות ב־90 הימים הקרובים, כדי להביא את העסק שלך להכנסות של 5 עד 6 ספרות בחודש.</p>
-            <p>הפגישה הזו עולה בדרך כלל 1500 ש"ח אבל ל־5 המעצבות הראשונות שישאירו פרטים כאן למטה - היא ניתנת במתנה, לגמרי בחינם.</p>
-            <p>אם את אחת שיודעת לזהות הזדמנויות - זו יכולה להיות ה־זכייה שלך בלוטו. אם לא - את תמיד יכולה לצאת מהדף, לקחת את כל הידע והערך שקיבלת כאן ולנסות את מזלך לבד בשיווק עצמאי.</p>
+            <p>
+              <>{'אנחנו מציעים לך פגישת '}<strong>{'פיצוח אחד על אחד'}</strong>{' - שעה שלמה שבה תביני בדיוק מה את צריכה לעשות ב־90 הימים הקרובים, כדי להביא את העסק שלך להכנסות של '}<strong>{'5 עד 6 ספרות בחודש'}</strong>{'.'}
+              </>
+            </p>
+            <p>
+              <>{'הפגישה הזו עולה בדרך כלל '}<strong>{'1500 ש"ח'}</strong>{' אבל ל־'}<strong>{'5 המעצבות הראשונות'}</strong>{' שישאירו פרטים כאן למטה - היא ניתנת '}<strong>{'במתנה, לגמרי בחינם'}</strong>{'.'}
+              </>
+            </p>
+            <p>
+              <>{'אם את אחת שיודעת לזהות הזדמנויות - זו יכולה להיות ה־זכייה שלך בלוטו. אם לא - את תמיד יכולה לצאת מהדף, לקחת את כל הידע והערך שקיבלת כאן ולנסות את מזלך לבד בשיווק עצמאי.'}
+              </>
+            </p>
           </div>
-          <a href="#lead-form" className="btn btn-royal" onClick={(e) => { e.preventDefault(); document.getElementById('lead-form')?.scrollIntoView({ behavior: 'smooth' }); }}>אני בפנים - שריינו לי פגישת פיצוח חינם (בשווי 1,500 ש"ח)</a>
         </div>
       </Section>
 

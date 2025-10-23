@@ -10,7 +10,8 @@ const ContentSection = ({
   ctaHref, 
   onCtaClick,
   ctaVariant = 'secondary',
-  className = '' 
+  className = '',
+  extraContent
 }) => {
   return (
     <div className={`content-section ${className}`}>
@@ -34,11 +35,15 @@ const ContentSection = ({
       {listItems && (
         <ul className="content-section-list">
           {listItems.map((item, index) => (
-            <li key={index} className="content-section-list-item">
-              {item}
-            </li>
+            <li key={index} className="content-section-list-item">{item}</li>
           ))}
         </ul>
+      )}
+
+      {extraContent && (
+        <div className="content-section-extra">
+          {extraContent}
+        </div>
       )}
       
       {ctaText && (
